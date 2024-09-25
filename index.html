@@ -25,12 +25,12 @@
 </div>
 </nav>
 <div class="flex gap-4 justify-center p-8">
-    <button class="h-14 w-40 text-xl rounded-lg font-bold bg-[#bef264] px-6">Donation</button>
-    <button class="h-14 w-40 text-xl rounded-lg font-bold border-2 px-6 text-gray-600 hover:bg-gray-200" onclick="openPage('history.html')">History</button>
+    <button id="donationButton" class="h-14 w-40 text-xl rounded-lg font-bold bg-[#bef264] px-6">Donation</button>
+    <button id="historyButton" class="h-14 w-40 text-xl rounded-lg font-bold border-2 px-6 text-gray-600 hover:bg-gray-200">History</button>
 </div>
 </header>
 <main>
-    <section class="flex flex-col gap-10">
+    <section id="donation" class="flex flex-col gap-10 mb-10">
     <div class="flex justify-center">
         <div class="lg:flex lg:w-[70%] w-[85%] justify-around border-2 rounded-lg p-8">
             <div>
@@ -92,6 +92,8 @@
         </div>
     </div>
 </section>
+    <section id="history" class="hidden">
+    </section>
 <input type="checkbox" id="success-modal" class="modal-toggle" />
 <div class="modal">
   <div class="modal-box flex items-center flex-col">
